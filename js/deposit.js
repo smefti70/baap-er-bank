@@ -5,8 +5,8 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     let depositField = document.getElementById('deposit-field');
     let newDepositAmount = depositField.value;
 
-    if (newDepositAmount == '') {
-        alert('Please insert an amount!');
+    if (isNaN(newDepositAmount) || newDepositAmount == '') {
+        alert('Please provide an amount in number!');
     }
 
     else {

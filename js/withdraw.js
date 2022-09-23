@@ -5,8 +5,8 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     let withdrawField = document.getElementById('withdraw-field');
     let newwithdrawAmount = withdrawField.value;
 
-    if (newwithdrawAmount == '') {
-        alert('Please insert an amount!');
+    if (isNaN(newwithdrawAmount) || newwithdrawAmount == '') {
+        alert('Please provide an amount in number!');
     }
 
     else {
